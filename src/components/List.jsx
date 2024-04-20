@@ -1,5 +1,5 @@
 export const List = (props) => {
-    const { list } = props; 
+    const { list } = props
     return (
         <ul>
             {list.map((item, index) => (
