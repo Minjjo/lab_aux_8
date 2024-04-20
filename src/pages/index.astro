@@ -1,6 +1,17 @@
 ---
-import {Button} from "../components/Button";
+import { List } from "../components/List";
+const buyList = [
+    'Controller',
+    'Bread',
+    'Water',
+    'Notebook',
+    'Math Book',
+    'Choco Bar',
+    'Milk'
+];
+interface Props {
+    list: string[];
+}
 ---
-<>
-	<Button client:load />
-</>
+<h1>Compras de la semana</h1>
+<List list={buyList} />
