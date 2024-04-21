@@ -1,4 +1,8 @@
 ---
-import List from '../components/buyList.astro';
+import Layaout from '@layaouts/Layout.astro'
+//import Movies from '@components/movies/Movies.astro'// SI DESCOMENTA PUEDE FUNCIONAR IGUAL PERO CON ASTRO
+import Movies from '../components/movies/Movie'
 ---
-<List />
+<Layaout title='Wlcome to astro'>
+	<Movies />
+</Layaout>

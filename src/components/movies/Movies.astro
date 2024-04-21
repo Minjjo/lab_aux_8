@@ -1,0 +1,58 @@
+---
+const URL_RANDOM_AVATAR = 'https://api.minimalavatars.com/avatar/random/png'
+---
+<div class="movie"> 
+    <div>
+        <h1>Random Image</h1>
+    </div>
+    <div class="avatar">
+        <img src={URL_RANDOM_AVATAR} alt="">
+        <hr /> 
+    </div> 
+    <div class="info">
+        <p>Descripcion:</p>
+        <p>Colocar alguna descripcion para los personajes</p>
+    </div>
+</div>
+
+<style>
+    .movie {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .avatar {
+        margin-top: -10px; 
+        margin-bottom: 10px;
+    }
+
+    .avatar img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+
+    hr {
+        width: 80%; 
+        margin-top: 0;
+        margin-bottom: 10px;
+        border: none;
+        border-top: 1px solid #ccc; 
+    }
+
+    .info {
+        margin-top: 5px; 
+        margin: 10px;
+    }
+
+    .info p {
+        font-size: 18px;
+        color: #333;
+        margin: 5px 0; 
+    }
+</style>
